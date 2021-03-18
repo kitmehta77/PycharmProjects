@@ -5,7 +5,10 @@ class Tiger(Feline):
         self.weight = "heavy"
 
 tiger = Tiger()
-print(tiger.bite())
+print(tiger.head())
+print(tiger.eye())
+print(tiger.leg())
+print(tiger.ear())
 
 feline = Feline()
-print(feline.eye())
+print(feline.bite(self))
