@@ -41,13 +41,13 @@ def overThan180000(gross_income):
     return tax
 
 def totalTax(gross_income):
-    if cross_income > 180000:
+    if gross_income >= 180000:
         return overThan180000(gross_income)
-    elif cross_income > 70000: # 70000 - 180000
+    elif gross_income >= 70000: # 70000 - 180000
         return lessThan180000(gross_income)
-    elif cross_income > 48000: # 48000 - 70000
+    elif gross_income >= 48000: # 48000 - 70000
         return lessThan70000(gross_income)
-    elif cross_income > 14000: # 14000 - 48000
+    elif gross_income >= 14000: # 14000 - 48000
         return lessThan48000(gross_income)
     else: # up to 14000
         return lessThan14000(gross_income)
